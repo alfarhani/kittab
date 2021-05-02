@@ -1,0 +1,329 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #header {
+            height: 100px;
+            width: 100%;
+            background-color: hsl(196, 78%, 56%);
+        }
+        
+        #logobox {
+            width: 30%;
+            height: 100%;
+            float: right;
+            background-color: #c0c0c0;
+        }
+        
+        #h1header {
+            float: left;
+            line-height: 100px;
+            padding: 0 15px;
+            color: hsl(238, 72%, 30%);
+        }
+        
+        #logo {
+            height: 100%;
+            width: 200px;
+            border-radius: 100%;
+        }
+        
+        nav {
+            width: 70%;
+            text-align: left;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: hsl(238, 72%, 30%);
+            font-weight: bold;
+        }
+        
+        nav li {
+            display: inline-block;
+            line-height: 100px;
+            width: 100px;
+            /* background-color:#c0c0c0; */
+            text-align: center;
+        }
+        
+        nav a:hover {
+            background-color: #c0c0c0;
+            color: hsl(196, 78%, 56%);
+            height: 100%;
+            width: 100%;
+            display: inline-block;
+        }
+        
+        main {
+            width: 100%;
+            height: 450px;
+            background-color: hsl(238, 72%, 30%);
+            border-top: 2px solid white;
+            animation-name: changebackground;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes changebackground {
+            0% {
+                background-color: hsl(238, 72%, 30%);
+            }
+            25% {
+                background-color: hsl(238, 69%, 46%);
+            }
+            50% {
+                background-color: hsl(238, 82%, 60%);
+            }
+            75% {
+                background-color: hsl(238, 69%, 46%);
+            }
+            100% {
+                background-color: hsl(238, 72%, 30%);
+            }
+        }
+        
+        aside {
+            width: 30%;
+            height: 100%;
+            background-color: #c0c0c0;
+            text-align: center;
+            float: left;
+        }
+        
+        aside img {
+            width: 90%;
+        }
+        
+        #h1aside {
+            padding: 16px 0;
+            border-bottom: 2px solid hsl(238, 72%, 30%);
+        }
+        
+        #article1 {
+            width: 70%;
+            /* background-color: black; */
+            height: 450px;
+            float: right;
+            position: relative;
+        }
+        
+        #box {
+            padding: 15px;
+            text-align: center;
+            width: 400px;
+            height: 180px;
+            position: absolute;
+            background-color: #c0c0c0;
+            /* top: 50%;
+    left: 50%; */
+            bottom: 50%;
+            right: 50%;
+            transform: translate(50%, 50%);
+            /* transform: translate(-50%, -50%); */
+        }
+        
+        #box h1 {
+            border-bottom: 3px solid hsl(238, 72%, 30%);
+            padding: 12px 0;
+        }
+        
+        #box p {
+            text-align: justify;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        #contactbox {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        #contactbox img {
+            width: 45px;
+            /* border-bottom: 2px solid  hsl(238, 72%, 30%); */
+            padding-bottom: 10px;
+            padding-left: 2px;
+            padding-right: 2px;
+        }
+        
+        #contactbox img:hover {
+            width: 55px;
+            border-bottom: 2px solid hsl(238, 72%, 30%);
+        }
+        /* @media all{ 
+    يمكنك كتابة كل الاكواد هنا 
+    تنفيذ جميع الاكواد الموجودة ضمن ال ميديا كويري ال 
+    على جميع انواع الشاشات حتى على الطابعات
+}*/
+        /* @media print{
+    aside{
+        display: none;
+    }
+   مثال لحذف هذا العنصر عند القيام بالنسخ 
+} */
+        /* ------------------------------------------------------- */
+        /* درس الميديا كويري
+
+الميديا سكرين 
+و الميديا برانت */
+        
+        @media only screen and (min-width:1040px) and (max-width:1217px) {
+            #logobox {
+                width: 35%;
+            }
+            #article1 {
+                width: 65%;
+            }
+            aside {
+                width: 35%;
+            }
+        }
+        
+        @media only screen and (max-width:1040px) and (min-width:911px) {
+            #logobox {
+                width: 40%;
+            }
+        }
+        
+        @media only screen and (max-width:910px) {
+            #header {
+                height: auto;
+                text-align: center;
+            }
+            #logobox {
+                width: 100%;
+            }
+            #h1header {
+                float: none;
+            }
+            #logo {
+                float: none;
+            }
+            span a {
+                text-decoration: none;
+            }
+            nav {
+                width: 100%;
+            }
+            aside {
+                width: 100%;
+            }
+            main {
+                height: auto;
+            }
+            #article1 {
+                height: 230px;
+                width: 100%;
+            }
+            #box {
+                width: 100%;
+            }
+        }
+        
+        @media only screen and (max-width:518px) {
+            nav li {
+                display: block;
+                width: 100%;
+            }
+        }
+        /* ---------------------------------------------------------
+                 الميديا برانت                            
+                                                  
+--------------------------------------------------*/
+        
+        @media print {
+            #logo {
+                height: 75%;
+                width: 100px;
+            }
+            #h1header {
+                font-size: 15px;
+            }
+            nav {
+                display: none;
+            }
+        }
+        /* -----------------------------------------------------------
+                     لانشاء قائمة مستظهرة
+
+------------------------------------------------------------*/
+        
+        #droplist {
+            background-color: hsl(196, 78%, 56%);
+            position: absolute;
+            z-index: 1;
+            display: none;
+        }
+        
+        #droplist a {
+            color: hsl(238, 72%, 30%);
+            display: block;
+        }
+        
+        #listdown:hover #droplist {
+            display: block;
+            width: 100px;
+            line-height: 50px;
+        }
+        /* -------------------------------------------------------- 
+                    image filtre
+
+
+*/
+        
+        #imgfilter {
+            width: 100%;
+            height: 450px;
+            border-top: 3px solid white;
+            /* filter: opacity(70%);  الشفافية*/
+            /* filter: contrast(150%);  التباين*/
+            /* filter: brightness(70%);  السطوع*/
+            /* filter: grayscale(100%);  الابيض والاسود*/
+            /* filter: blur(50px);  الضبابية تضاف بالبكس*/
+            /* filter: sepia(100%);  البني الداكن*/
+            /* filter: saturate(3); حرارةاو حدة الصورة*/
+            /* filter: invert(100%); التباين العكسي صورة اشعة*/
+            /* filter: opacity(70%) contrast(150%) grayscale(100%); لاضافة اكثر من فلتر*/
+            /* filter: none; لحذف الفلتر*/
+            /*للمزيد من الفلاتر و للفهم اكثر قم بزيارة الموقع التالي
+ 
+                   www.cssfiltres.co
+*/
+        }
+        /* ---------------------------------------------------------- */
+        /* ---____________before and after  قبل وبعد __________---*/
+        /* لاضافة نص  */
+        
+        #h123::before {
+            content: " للكاتب محمد فرحاني";
+            text-align: center;
+            background-color: black;
+            color: white;
+            display: block;
+        }
+        /* #h123::after{
+    content: " للكاتب محمد فرحاني ";
+    text-align: center;
+
+} */
+        /* لاضافة صورة */
+        /* #h123::after{
+    content: url(image/img2.png);
+    display: block;
+  
+} */
+        /* -----------------media qwery orientation----------
+landscape and portrait
+------ */
+        /* @media only screen and (orientation:landscape) and (max-width:640px){
+   #logobox{
+        background-color: red;
+    }
+} */
+        /* __________________________________________________________ */
+        /* ________________________tanmya.html________________________ */
+        
+       

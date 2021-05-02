@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#hdt {
+    height: 35px;
+    width: 100%;
+    background-color: #3560ab;
+}
+
+#logobox2 {
+    height: 100%;
+    background-color: #c0c0c0;
+    /* clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%); */
+    width: 20%;
+    float: right;
+}
+
+#h13 {}
+
+.a1 {
+    line-height: 35px;
+    color: #3560ab;
+    padding: 0 60px;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15px;
+}
+
+#nav2-bar2 {
+    width: 80%;
+    text-align: center;
+    line-height: 35px;
+
+}
+#nav2-bar2 a{
+    color: #c0c0c0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+#nav2-bar2 a:hover{
+    font-size:25px ;
+    /* font-family: 'Reem Kufi', sans-serif; */
+
+}
+#main2{
+    width:100%;
+    height:800px;
+    background-color :#c0c0c0 ;
+    border-top: 2px solid white;
+}
+#aside2{
+float: right;
+width: 20%;
+height:100% ;
+background-color: beige;
+}
+#img1{
+   width: 100%;
+   height: 300px;
+}
+#article13{
+    background-color: beige ;
+    width: 80%;
+    height: 300px;
+    border-top: 3px solid white;
+    border-right: 3px solid white;
+}
+#titlebook1{
+    float: right;
+    font-family: 'Reem Kufi', sans-serif;
+
+}
+#div1{
+    margin: 15px;
+    padding: 20px;
+}
+#molakhs1{
+    float: right;
+    text-align: right;
+    justify-content:center ;
+    font-size: large;
+}
+#footer1{
+  background-color: black;
+  text-align: center;
+  color: #f6fffb;
+}
+@media only screen and (max-width:1241px){
+    #logobox2{
+        width: 30%;
+    }
+    #article13{
+        width: 70%;
+    }
+    #aside2{
+        width:30%;
+    }
+
+}
+@media only screen and (max-width:829px){
+    #logobox2{
+        width: 40%;
+    }
+    #article13{
+        width: 60%;
+        height: 400px;
+    }
+    #aside2{
+        width: 40%;
+    }
+    #img1{
+        height: 400px;
+    }
+}
+@media only screen and (max-width:620px){
+    #hdt{
+        width: auto;
+        text-align: center;
+    }
+    #logobox2{
+        width:auto;
+       
+    }
+    #h1heder{ 
+        float: none;
+
+    }
+    #nav2-bar2{
+        width: auto;
+    }
+    #nav2-bar2 li{
+        display: block;
+        width: 100%;
+    }
+    #aside2{
+        width: 100%;
+    }
+    #article13{
+        width: 100%;
+    }
+    #main2{
+        height: auto;
+    }
+    
+   
+    
+}
+
